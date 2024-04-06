@@ -2,6 +2,9 @@
 
 body {
     font-family: 'Single Day', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* For smooth scrolling */
 }
 
 body, html {
@@ -82,7 +85,7 @@ main {
         width:350px;
         height: 350px;
         margin-top: -200px;
-        margin-left: 1200px;
+        margin-left: 70%;
     }
     
     .scroll-wrapper {
@@ -118,6 +121,59 @@ main {
         display: none;
       }
       
+}
+
+.content-block1 {
+    display: grid;
+    margin-left:auto;
+    margin-right: 50px;
+    width: fit-content;
+}
+
+#about-header{
+    color: #FF935D;
+    font-size: 50px;
+}
+
+.about-content{
+    font-size: 25px;
+
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 30px; /* This sets spacing between items */
+    padding: 50px;
+    margin: auto; /* Centers your grid within the section */
+    max-width: 1200px; /* Adjust max-width as needed for your design */
+}
+
+.game-description {
+    background: #fffbeb; 
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Button Styles */
+button {
+    background-color: #FF935D; /* Button background */
+    font-family: 'Single Day', sans-serif;
+    color: #fff;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 20px; /* Adds space between the button and the text above */
+}
+
+button:hover {
+
+    background-color: #f7a692; /* Slightly lighter shade for hover */
 }
 
 footer {
