@@ -1,5 +1,9 @@
 /* Use this for styling, includes fonts and colors*/
 
+body {
+    font-family: 'Single Day', sans-serif;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -8,6 +12,45 @@ body, html {
 
 header, footer {
     /* Add styles for your header */
+    .topbarContainer{
+        height: 145px;
+        width: 100%;
+        background-color: #FFE382;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+    
+    .topbarLeft{
+        flex: 3;
+        font-size: 60px;
+        display: flex;
+        margin-left: 50px;
+    }
+    
+    .topbarImg{
+        width: 100px;
+        height: 100px;
+        margin-right: 50px;
+        margin-left: 20px;
+    }
+
+    .logo{
+        font-size: 55px;
+        margin-right: 80px;
+        align-items: end;
+        color:black;
+    }
+    
+    
+    .topbarLink{
+        margin-right: 50px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
 }
 
 main {
