@@ -1,0 +1,24 @@
+/* Use this for styling, includes fonts and colors*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* For smooth scrolling */
+}
+
+header, footer {
+    /* Add styles for your header */
+}
+
+main {
+    /* Add styles for your main content area */
+}
+
+footer {
+    /* Add styles for the footer, not needed right now. Delete this later. */
+}
+
+.scrollable-div {
+    height: 500px; /* Can change the height */
+    overflow-y: scroll; /* Adds a scrollbar if the content overflows */
+}
