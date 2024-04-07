@@ -79,6 +79,7 @@ main {
     }
 
     /*This remaining section in main deals with horizontal scrolling*/
+
     .scroll-container {
         padding-top: 150px;
         padding-bottom: 100px;
