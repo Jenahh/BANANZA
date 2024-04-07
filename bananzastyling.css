@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-header, footer {
+header {
     /* Add styles for your header */
     .topbarContainer{
         height: 20%;
@@ -181,10 +181,6 @@ button {
 
 button:hover {
     background-color: #f7a692; /* Slightly lighter shade for hover */
-}
-
-footer {
-    /* Add styles for the footer, not needed right now. Delete this later. */
 }
 
 ::-webkit-scrollbar{
