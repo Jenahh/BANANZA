@@ -1,28 +1,23 @@
-/* Use this for styling, includes fonts and colors*/
-
 body {
-    font-family: 'Single Day', sans-serif;
+    font-family: 'Single Day', sans-serif; /*Using this font for the whole website*/
     margin: 0;
     padding: 0;
 }
 
 header {
-    /* Add styles for your header */
     .topbarContainer{
-        height: 20%;
+        height: 15%;
         width: 100%;
         background-color: #FFE382;
         display: flex;
         align-items: center;
-        position: fixed;
+        position: fixed; /*Fixes the nav bar so it stays even if you scroll down*/
         top: 0;
-        z-index: 999;
+        z-index: 999; /*Makes sure nav bar does not clip through anything*/
     }
     
     .topbarLeft{
         flex: 3;
-        font-size: 60px;
-        display: flex;
         margin-left: 50px;
     }
     
@@ -33,156 +28,139 @@ header {
         margin-left: 20px;
     }
 
-    .logo{
+    .logo{ /*BANANZA name on nav bar*/
         font-size: 55px;
-        margin-right: 180px;
-        align-items: end;
+        margin-right: 150px;
         color:black;
     }
     
     
-    .topbarLink{
+    .topbarLink{ /*The nav bar buttons like Home and About*/
         margin-right: 50px;
         font-size: 30px;
         cursor: pointer;
     }
-    
-    #homeButton:focus {
-        outline: none;
-      }
-    
 }
 
 main {
-    /* Add styles for your main content area */
-    .topMain{
+    .topMain{ /*The Banana and first part of the site you see*/
         padding-top: 130px;
         margin-left: 160px;
         margin-top: 100px;
     }
 
-    .title{
-        text-align: justify;
+    .title{ /*"Make teaching health silly~*/
         font-size: 70px;
         color: #FF935D;
     }
 
-    .descWrapper{
+    .descWrapper{ /*Area after the title, keeping it contained*/
         width: 800px;
         height: 70px;
     }
 
-    .desc{
-        text-align: justify;
+    .desc{ /*Text in the description wrapper */
         font-size:35px;
         margin-top: 30px;
     }
     
-    .bananaImage{
+    .bananaImage{ /*Where da banana? How big?*/
         width:350px;
         height: 350px;
         margin-top: -200px;
         margin-left: 70%;
     }
 
-    .monkeImage{
+    .monkeImage{ /*Where da monke? Big how?*/
         width:400px;
         height: 400px;
         margin-left: 200px;
         margin-top: 100px;
     }
 
-    
-    .scroll-wrapper {
-        width: 100%;
-        overflow: hidden;
-      }
-      
-      .scroll-container {
+    /*This remaining section in main deals with horizontal scrolling*/
+    .scroll-container {
         padding-top: 150px;
-        padding-bottom: 150px;
+        padding-bottom: 100px;
         width: 100%;
-        overflow-x: auto;
+        overflow-x: auto; /*overflow-x and overflow-y make sure only this section is scrollable*/
         overflow-y: hidden;
         white-space: nowrap;
-        height: 460px; /* Adjust as needed */
-      }
-      
-      .scroll-content {
-        display: inline-block;
-      }
-      
-      .item {
-        display: inline-block;
-        text-align: center;
-        border-radius: 15%;
-        width: 70%; /* Adjust as needed */
-        height: 450px; /* Adjust as needed */
+    }
+    
+    .item {
+        display: inline-block; /*Makes images appear in one line instead of stacking*/
+        border-radius: 30%; /*Rounded edges for the item*/
+        width: 300px; 
+        height: 300px; 
         background-color: #FFE382;
-        margin-right: 50px; /* Adjust spacing between items */
-      }
+        margin-right: 50px; /*Spacing between items */
+        position: relative; /*Puts the images in the container and keeps it there */
+    }
+    
+    .item img {
+        width: 100%; /*Image has to fit the item width and height*/
+        height: 100%; 
+        object-fit: cover; /* Cover the container without stretching */
+        border-radius: 30px; /*Rounded edges for the image*/
+    }
 
-      .scroll-container::-webkit-scrollbar {
-        display: none;
-      }
-      
 }
 
-.content-block1 {
-    display: grid;
+.content-block1 { /*About Us! Section styling*/
     margin-left:auto;
     margin-right: 50px;
     margin-top: -400px;
     width: fit-content;
 }
 
-#about-header{
+#about-header{ /*Formatting "About Us!"*/
     color: #FF935D;
     font-size: 50px;
 }
 
-.about-content{
+.about-content{ /*Formatting the actual description*/
     padding-bottom: 35%;
     font-size: 25px;
     width: 800px;
     height: 70px;
 }
 
-.games-grid {
+.games-grid { /*Game description cards*/
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
-    gap: 30px; /* This sets spacing between items */
+    gap: 30px; /*Spacing between items*/
     padding: 50px;
-    margin: auto; /* Centers your grid within the section */
-    max-width: 80%; /* Adjust max-width as needed for your design */
+    margin: auto; /* Centers grid*/
+    max-width: 85%; 
 }
 
 .game-description {
-    background: #fffbeb; 
-    border: none;
+    background: #fffbeb; /*Card background*/
     border-radius: 10px;
     font-size: 20px;
     padding: 20px;
     text-align: left;
 }
 
-/* Button Styles */
+/* Button Styling */
 button {
-    background-color: #FF935D; /* Button background */
-    font-family: 'Single Day', sans-serif;
+    background-color: #FF935D; /*Button background*/
+    font-family: 'Single Day', sans-serif; 
     color: #fff;
     border: none;
-    padding: 5px 5px;
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 10px; /*Rounding*/
     cursor: pointer;
     font-size: 25px;
-    margin-top: 20px; /* Adds space between the button and the text above */
+    margin-top: 15px; /*Space between button and text*/
 }
 
 button:hover {
-    background-color: #f7a692; /* Slightly lighter shade for hover */
+    background-color: #ffa97e; /*Lighter Shade for hovering*/
 }
 
+/*Scrollbar customization*/
 ::-webkit-scrollbar{
     width:8px;
 }
