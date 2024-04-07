@@ -97,6 +97,10 @@ main {
         margin-right: 50px; /*Spacing between items */
         position: relative; /*Puts the images in the container and keeps it there */
     }
+
+    .scroll-container::-webkit-scrollbar {
+        size: 2px;
+      }
     
     .item img {
         width: 100%; /*Image has to fit the item width and height*/
