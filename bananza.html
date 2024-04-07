@@ -6,98 +6,113 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BANANZA</title> 
 <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
-<!--<link rel="icon" href="/images/favicon.ico" type="image/x-icon">-->
 <link rel="stylesheet" href="bananzastyling.css"/>
 </head>
 <body>
 
 <header>
     <!-- Navigation bar goes here: Icon, Home, About, Bananza -->
-        <div class = "topbarContainer">
-            <div class ="image">
-                <img src="images/topbar.png" alt="" class="topbarImg" />
+    <div class="topbarContainer">
+        <div class="image">
+            <img src="images/topbar.png" alt="" class="topbarImg" /> <!--This is the monkey icon-->
+        </div>
+        <div class="topbarLeft">
+            <div class="topbarLinks">
+                <!-- homeButton and aboutButton to be used in bananzascript.js (scrollTo buttons)-->
+                <span id="homeButton" class="topbarLink">Home</span>
+                <span id="aboutButton" class="topbarLink">About</span>
             </div>
-            <div class ="topbarLeft">
-                <div class ="topbarLinks">
-                    <span class ="topbarLink">Home</span>
-                    <span class ="topbarLink">About</span>
-                </div>
-                </div>
-                <div class="topbarRight">
-                    <span class ="logo">BANANZA</span>
-                    </Link>
-                </div>
-            </div>
+        </div>
+        <div class="topbarRight">
+            <span class="logo">BANANZA</span>
+        </div>
+    </div>
 </header>
 
+
 <main>
-    <!-- Main content of the website goes here: About Us & Game Description -->
+    <!-- Main content of the website goes here: Images, Phrase, Horizontal Scrolling, About Us & Game Description -->
     <body style="background-color:#FFF3C7"></body>
     <div class="topMain">
         <div class="title">
             Make teaching health silly~
         </div>
         <div class="descWrapper">
-            <div class="desc">Click on and play our interactive games designed for K-5! Each game offers an immersive experience that allows all childern K-5 expand their knowledge on important basic life skills.
+            <div class="desc">Click on and play our interactive games designed for K-5! 
+                Each game offers an immersive experience that allows all childern K-5 expand their knowledge on important basic life skills.
             </div>
         </div>
         <img src="images/banana.png" alt="" class="bananaImage" />
     </div>
     
+    <!--These are the images and container used for horizontal scrolling-->
     <div class="scroll-container">
         <div class="scroll-content">
-          <div class="item">Item 1</div>
-          <div class="item">Item 2</div>
-          <div class="item">Item 3</div>
-          <div class="item">Item 4</div>
-          <div class="item">Item 5</div>
-          <div class="item">Item 6</div>
+            <div class="item"><img src="images/mask_up.png"></div>
+            <div class="item"><img src="images/Snake.png"></div>
+            <div class="item"><img src="images/Matching.png"></div>
+            <div class="item"><img src="images/handwashing.png"></div>
+            <div class="item"><img src="images/trivia.png"></div>
+            <div class="item"><img src="images/towerdef.png" ></div>
         </div>
     </div>
 
+    <!--Start About Us! section-->
     <img src="images/monke.png" alt="" class="monkeImage" />
       <section class="content-block1" id="about">
         <div class="about-container">
             <h2 id="about-header">About Us!</h2>
             <div class="about-content">
-                <p>BANANZA's goal is to educate kids on basic yet important nutritional and hygienic practices. We aim to do this by providing children with enjoyable games that are informative. The Monkey Business team hopes to create an influential experience on these impressionable children and leave positive long-term effects on their lives.</p>
+                <p>BANANZA's goal is to educate kids on basic yet important nutritional and hygienic practices. 
+                    We aim to do this by providing children with enjoyable games that are informative. 
+                    The Monkey Business team hopes to create an influential experience on these impressionable children 
+                    and leave positive long-term effects on their lives.</p>
                 <p>Learn more about our games below!</p>
             </div>
         </div>
     </section>
 
+    <!--Start Game Description Grid section-->
     <section class="content-block" id="games">
         <div class="games-grid">
-            <div class="game-description kindergarten">
+            <!--Using classes to organize every card for name, decription, and play button-->
+            <div class="game-description kindergarten"> 
                 <h3>Kindergarten</h3>
                 <p>Mask Up</p>
                 <p>Protect yourself in a large crowd by putting masks on the people. Move quickly or they'll disappear!</p>
-                <button onclick="playGame('gameK.html')">Play Now!</button>
+                <!--Calls playGame from bananzascript.js and refers to html file w/ game embed-->
+                <button onclick="playGame('gameK.html')">Play Now!</button> 
             </div>
-            <div class="game-description grade1">
+            <!--Repeat for the rest of the cards-->
+
+            <div class="game-description grade1"> 
                 <h3>Grade 1</h3>
                 <p>Snake (Monkey Edition)</p>
                 <p>Eat your bananas in order to obtain your healty dose of potassium! Use the arrow keys to move. Go out the box and you lose!</p>
                 <button onclick="playGame('game1.html')">Play Now!</button>
             </div>
+
             <div class="game-description grade2">
                 <h3>Grade 2</h3>
                 <p>Matching Munchies</p>
                 <p>How well do you know your nutritional groups? Match the category with the corresponding food/drink.</p>
                 <button onclick="playGame('game2.html')">Play Now!</button>
             </div>
+
             <div class="game-description grade3">
                 <h3>Grade 3</h3>
                 <p>Bye Bye Stinky in the Sinky!</p>
                 <p>Simulate brushing your teeth, washing your hands, and drying them to practice having a clean routine!</p>
                 <button onclick="playGame('game3.html')">Play Now!</button>
             </div>
+
             <div class="game-description grade4">
                 <h3>Grade 4</h3>
                 <p>Big Kid Biology</p>
                 <p>Grab a friend and duke it out! Who knows the most about their human body? Don't forget this!</p>
                 <button onclick="playGame('game4.html')">Play Now!</button>
             </div>
+
             <div class="game-description grade5">
                 <h3>Grade 5</h3>
                 <p>Immune Defense</p>
@@ -106,13 +121,18 @@
             </div>
         </div>
     </section>
-
 </main>
 
 <footer>
     <!-- Footer is the least of our worries right now -->
+    <div class = "footerContainer">
+        <div class="company">©2024 Monkey Business</div>
+        <hr class ="line"></hr> <!--Horizontal line-->
+        <span class ="footerLink1">Home</span>
+        <span class ="footerLink2">About</span>
+    </div>
 </footer>
 
-<script src="bananzascript.js"></script>
+<script src="bananzascript.js"></script> <!--Referring to the javascript file we're using.-->
 </body>
 </html>
