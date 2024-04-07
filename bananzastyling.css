@@ -7,12 +7,6 @@ body {
     scroll-behavior: smooth; /* For smooth scrolling */
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth; /* For smooth scrolling */
-}
-
 header, footer {
     /* Add styles for your header */
     .topbarContainer{
