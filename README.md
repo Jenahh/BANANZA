@@ -14,7 +14,7 @@ Translating the Figma design, especially horizontal scrolling and trying to fit 
 Our front-end developers are very proud of the UI Design and being able to code a majority of their idea despite not having much experience. Being able to spit out 6 games in a weekend is also an amazing feat from our freshmen game-devs.
 
 ## What we learned:
-For our 2 front end developers, we learned how to properly utilize GitHub so that we could work side by side and collaborate. We learned a lot more about the relationship between the markup/scripting languages too. On the game development end, one of our developers learned a lot about the immune system to accurately represent the information.
+For our 2 front end developers, we learned how to properly utilize GitHub so that we could work side by side and collaborate. We learned a lot more about the relationship between the markup/scripting languages too. On the game development end, one of our developers learned a lot about the immune system to accurately represent the information and built his knowledge on Unity game development.
 
 ## What's next for BANANZA:
 With more time to work on development, we hope to enhance the game experience and UX experience for users. Accessibility is also a goal for us and we hope to also make BANANZA IOS compatible for schools that may provide iPads for young students.
