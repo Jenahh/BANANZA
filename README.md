@@ -1,3 +1,7 @@
+
+https://github.com/Jenahh/BANANZA/assets/143299160/d4751de8-01b3-48e0-a214-4b38397364a7
+Uploading 2024-04-07 09-55-16 (1).mp4…
+
 ## Inspiration:
 When we first created our team, we wanted to be team _Monkey Business_. With such a silly name, it was a given that we had to make a project _equally_ as silly. What better audience would appreciate us if not K-5 students? 
 
